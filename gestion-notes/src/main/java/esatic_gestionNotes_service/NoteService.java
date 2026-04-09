@@ -18,11 +18,9 @@ import java.util.Map;
 public class NoteService {
 
     private final NoteDAO     noteDAO;
-    private final EtudiantDAO etudiantDAO;
-
     public NoteService() {
         this.noteDAO     = new NoteDAO();
-        this.etudiantDAO = new EtudiantDAO();
+        new EtudiantDAO();
     }
 
     
